@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-200">
@@ -87,6 +88,41 @@
             </div>
         </div>
     </div>
-    
+    <!-- Add Task  -->
+    <div id="add-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed hidden">
+        <div class="bg-gray-300 w-2/5 m-auto rounded-md relative mt-10">
+            <button id="x" class="bg-red-600 text-white w-1/12 text-center rounded absolute top-2 right-3">X</button>
+            <p class="font-extrabold italic text-center py-5">Add Task</p>
+            <div class="w-4/5 m-auto mb-5">
+                <p class="font-bold mb-2 italic">Title:</p>
+                <input class="w-full rounded-md pl-5 outline-none" type="text" placeholder="Entrer le titre">
+            </div>
+            <div class="w-4/5 m-auto mb-5">
+                <p class="font-bold mb-2 italic">Description:</p>
+                <textarea class="text-gray-400 w-full h-48 rounded-md resize-none outline-none pl-5 " id="area" value="Entrer la description">Entrer la description</textarea>
+            </div>
+            <div class="w-4/5 m-auto mb-5">
+                <p class="font-bold mb-2 italic">Date:</p>
+                <input class=" m-auto w-full text-gray-400 rounded-md px-5 outline-none" type="date" placeholder="mm-dd-yyyy">
+            </div>
+            <div class="w-4/5 m-auto mb-5">
+                <p class="font-bold mb-2 italic">status:</p>
+                <select class="w-full m-auto text-gray-400 rounded-md px-5 outline-none" name="" id="">
+                    <option value="">Select le status</option>
+                    <option value="T1">T1</option>
+                </select>
+            </div>
+            <div class="w-4/5 m-auto mb-5 ">
+                <p class="font-bold mb-2 italic">Priority:</p>
+                <select class="w-full m-auto text-gray-400 rounded-md px-5 outline-none" name="" id="">
+                    <option value="">Select la priority</option>
+                    <option value="T1">T1</option>
+                </select>
+            </div>
+            <div class="flex ">
+               <button class="bg-blue-400 text-white px-3 py-1 rounded ml-[28.60rem] mb-5">Add Task</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
