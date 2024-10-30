@@ -10,7 +10,7 @@
 <body class="bg-gray-200">
     <div class="flex justify-around py-16 w-8/12 sm:w-11/12 sm:pl-10">
         <h1 class="font-extrabold italic text-5xl sm:text-3xl sm:font-bold">To-Do List</h1>
-        <button class="text-white bg-blue-500 px-5 text-xl rounded-md sm:px-2 md:text-2xl">Add Task + </button>
+        <button id="add-btn" class="text-white bg-blue-500 px-5 text-xl rounded-md sm:px-2 md:text-2xl">Add Task + </button>
         <div class="flex w-2/6">
             <select class="h-full text-gray-300 text-xl rounded-l-md pl-2 w-1/2 md:py-3">
                 <option>Select</option>
@@ -27,62 +27,62 @@
     </div>
     <div class="bg-white w-4/5 my-12 m-auto rounded-md pb-10 ">
         <p class="bg-blue-400 text-white font-bold text-center w-full py-5 text-2xl rounded-md sm:font-semibold">Tasks</p>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
-            <p class="bg-red-600 text-white text-center w-full rounded-md md:text-xl">P1</p>
+        <div id="task-1"  class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
+            <p class="priority bg-red-600 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
-                <p class="font-bold text-xl">Task 1</p>
-                <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
+                <p class="title font-bold text-xl">Task 1</p>
+                <p class="date text-gray-400 text-sm">2025-10-13</p>
             </div>
             <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
-                <p class="text-gray-500 w-2/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
+                <p class="description text-gray-500 w-2/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
                 <div class=" flex gap-2 sm:mt-2">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button onclick="showUpdateModel(1)" class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
                     <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
         </div>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
+        <div id="task-2"  class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
             <p class="bg-orange-400 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
-                <p class="font-bold text-xl">Task 1</p>
-                <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
+                <p class="font-bold text-xl">Task 2</p>
+                <p class="date text-gray-400 text-sm">2025-10-13</p>
             </div>
             <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
                 <p class="text-gray-500 w-1/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
                 <div class=" flex gap-2 sm:mt-2">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button id="update-btn-2" onclick="showUpdateModel(2)" class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
                     <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
         </div>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
+        <div id="task-3"  class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
             <p class="bg-red-600 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
-                <p class="font-bold text-xl">Task 1</p>
-                <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
+                <p class="font-bold text-xl">Task 3</p>
+                <p class="date text-gray-400 text-sm">2025-10-13</p>
             </div>
             <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
                 <p class="text-gray-500 w-1/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
                 <div class=" flex gap-2 sm:mt-2">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button id="update-btn-3" onclick="showUpdateModel(3)" class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
                     <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
         </div>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black  sm:h-32 sm:w-11/12">
+        <div id="task-4"  class="w-4/5 m-auto my-10 border rounded-md border-black  sm:h-32 sm:w-11/12">
             <p class="bg-green-500 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
-                <p class="font-bold text-xl">Task 1</p>
-                <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
+                <p class="font-bold text-xl">Task 4</p>
+                <p class="date text-gray-400 text-sm">2025-10-13</p>
             </div>
             <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
                 <p class="text-gray-500 w-1/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
                 <div class=" flex gap-2 sm:mt-2">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button onclick="showUpdateModel(4)" class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
                     <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
@@ -91,7 +91,7 @@
     <!-- Add Task  -->
     <div id="add-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed hidden">
         <div class="bg-gray-300 w-2/5 m-auto rounded-md relative mt-10 sm:w-[27rem] sm:mt-56 md:w-[40rem] md:mt-11">
-            <button id="x" class="bg-red-600 text-white w-1/12 text-center rounded absolute top-2 right-3">X</button>
+            <button id="remove-add-model" class="bg-red-600 text-white w-1/12 text-center rounded absolute top-2 right-3">X</button>
             <p class="font-extrabold italic text-center py-5">Add Task</p>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Title:</p>
@@ -125,43 +125,48 @@
         </div>
     </div>
     <!-- Update Task -->
-    <div id="add-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed hidden">
+    <div id="update-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed hidden">
         <div class="bg-gray-300 w-[30rem] m-auto rounded-md relative sm:w-[27rem] sm:mt-56 md:w-[40rem] md:mt-11 ">
-            <button id="x" class="bg-red-600 text-white w-1/12 text-center rounded absolute top-2 right-3">X</button>
+            <button id="remove-update-model" class="bg-red-600 text-white w-1/12 text-center rounded absolute top-2 right-3">X</button>
+            <input type="hidden" class="task-index">
             <p class="font-extrabold italic text-center py-5">Update Task</p>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Title:</p>
-                <input class="w-full rounded-md pl-5 outline-none" type="text" placeholder="Entrer le titre">
+                <input class="title w-full rounded-md pl-5 outline-none" type="text" placeholder="Entrer le titre">
             </div>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Description:</p>
-                <textarea class="text-gray-400 w-full h-48 rounded-md resize-none outline-none pl-5 " id="area" placeholder="Entrer la description"></textarea>
+                <textarea class="description text-gray-400 w-full h-48 rounded-md resize-none outline-none pl-5 " id="area" placeholder="Entrer la description"></textarea>
             </div>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Date:</p>
-                <input class=" m-auto w-full text-gray-400 rounded-md px-5 outline-none" type="date" placeholder="mm-dd-yyyy">
+                <input class="date m-auto w-full text-gray-400 rounded-md px-5 outline-none" type="date" placeholder="mm-dd-yyyy">
             </div>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">status:</p>
-                <select class="w-full m-auto text-gray-400 rounded-md px-5 outline-none" name="" id="">
+                <select class="status w-full m-auto text-gray-400 rounded-md px-5 outline-none" name="" id="">
                     <option value="">Select le status</option>
-                    <option value="T1">T1</option>
+                    <option value="to-do">To-Do</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="done">Done</option>
                 </select>
             </div>
             <div class="w-4/5 m-auto mb-5 ">
                 <p class="font-bold mb-2 italic">Priority:</p>
-                <select class="w-full m-auto text-gray-400 rounded-md px-5 outline-none" name="" id="">
+                <select class="priority w-full m-auto text-gray-400 rounded-md px-5 outline-none" name="" id="">
                     <option value="">Select la priority</option>
-                    <option value="T1">T1</option>
+                    <option value="P1">P1</option>
+                    <option value="P2">P2</option>
+                    <option value="P3">P3</option>
                 </select>
             </div>
             <div class="flex ">
-               <button class="bg-blue-400 text-white px-3 py-1 rounded ml-[29.3rem] mb-5 sm:ml-[19.5rem] md:ml-[31.25rem]">Update</button>
+               <button onclick="updateTaskInfo()" class="bg-blue-400 text-white px-3 py-1 rounded ml-[29.3rem] mb-5 sm:ml-[19.5rem] md:ml-[31.25rem]">Update</button>
             </div>
         </div>
     </div>
     <!-- Delete Task -->
-    <div id="add-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed ">
+    <div id="delete-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed hidden">
         <div class="bg-gray-300 w-2/5 m-auto rounded-md p-5 mt-52 sm:w-4/5 md:w-5/12">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class=" w-20 h-20 fill-red-600 m-auto mb-10">
                 <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/>
@@ -174,5 +179,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
