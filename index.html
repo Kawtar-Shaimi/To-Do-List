@@ -8,89 +8,89 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-200">
-    <div class="flex justify-around py-16 w-8/12">
-        <h1 class="font-extrabold italic text-5xl">To-Do List</h1>
-        <button class="text-white bg-blue-500 px-5 text-xl rounded-md">Add Task + </button>
+    <div class="flex justify-around py-16 w-8/12 sm:w-11/12 sm:pl-10">
+        <h1 class="font-extrabold italic text-5xl sm:text-3xl sm:font-bold">To-Do List</h1>
+        <button class="text-white bg-blue-500 px-5 text-xl rounded-md sm:px-2 md:text-2xl">Add Task + </button>
         <div class="flex w-2/6">
-            <select name="" id="" class="h-full text-gray-300 text-xl rounded-l-md pl-2 w-1/2">
+            <select class="h-full text-gray-300 text-xl rounded-l-md pl-2 w-1/2 md:py-3">
                 <option>Select</option>
                 <option value="Date">Date</option>
                 <option value="Priority">Priority</option>
             </select>
-            <button class="h-full text-white bg-blue-500 text-xl rounded-r-md w-1/2">Filter</button>
+            <button class="h-full text-white bg-blue-500 text-xl rounded-r-md w-1/2 sm:w-1/3 md:text-2xl md:w-24">Filter</button>
         </div>
     </div>
     <div class="flex justify-around w-3/4 m-auto">
-        <p class="bg-red-600 text-white px-5 py-3 text-xl font-bold rounded-md">P1: 0 tasks</p>
-        <p class="bg-orange-500 text-white px-5 py-3 text-xl font-bold rounded-md">P2: 5 tasks</p>
-        <p class="bg-green-500 text-white px-5 py-3 text-xl font-bold rounded-md">P3: 4 tasks</p>
+        <p class="bg-red-600 text-white px-5 py-3 text-xl font-bold rounded-md sm:italic sm:font-semibold">P1: 0 tasks</p>
+        <p class="bg-orange-500 text-white px-5 py-3 text-xl font-bold rounded-md sm:italic sm:font-semibold">P2: 5 tasks</p>
+        <p class="bg-green-500 text-white px-5 py-3 text-xl font-bold rounded-md sm:italic sm:font-semibold">P3: 4 tasks</p>
     </div>
-    <div class="bg-white w-4/5 my-12 m-auto rounded-md pb-10">
-        <p class="bg-blue-400 text-white font-bold text-center w-full py-5 text-2xl rounded-md">Tasks</p>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black">
-            <p class="bg-red-600 text-white text-center w-full rounded-md">P1</p>
+    <div class="bg-white w-4/5 my-12 m-auto rounded-md pb-10 ">
+        <p class="bg-blue-400 text-white font-bold text-center w-full py-5 text-2xl rounded-md sm:font-semibold">Tasks</p>
+        <div class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
+            <p class="bg-red-600 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
                 <p class="font-bold text-xl">Task 1</p>
                 <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
             </div>
-            <div class="flex justify-between pl-10 pr-5 pb-3">
-                <p class="text-gray-500 w-1/3">This is just a  dump description fr a dump task
+            <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
+                <p class="text-gray-500 w-2/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
-                <div class=" flex gap-5">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md">Edit</button>
-                    <button class="bg-red-400 text-white px-3 py-2 rounded-md">Delete</button>
+                <div class=" flex gap-2 sm:mt-2">
+                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
         </div>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black">
-            <p class="bg-orange-400 text-white text-center w-full rounded-md">P1</p>
+        <div class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
+            <p class="bg-orange-400 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
                 <p class="font-bold text-xl">Task 1</p>
                 <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
             </div>
-            <div class="flex justify-between pl-10 pr-5 pb-3">
-                <p class="text-gray-500 w-1/3">This is just a  dump description fr a dump task
+            <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
+                <p class="text-gray-500 w-1/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
-                <div class=" flex gap-5">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md">Edit</button>
-                    <button class="bg-red-400 text-white px-3 py-2 rounded-md">Delete</button>
+                <div class=" flex gap-2 sm:mt-2">
+                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
         </div>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black">
-            <p class="bg-red-600 text-white text-center w-full rounded-md">P1</p>
+        <div class="w-4/5 m-auto my-10 border rounded-md border-black sm:h-32 sm:w-11/12">
+            <p class="bg-red-600 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
                 <p class="font-bold text-xl">Task 1</p>
                 <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
             </div>
-            <div class="flex justify-between pl-10 pr-5 pb-3">
-                <p class="text-gray-500 w-1/3">This is just a  dump description fr a dump task
+            <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
+                <p class="text-gray-500 w-1/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
-                <div class=" flex gap-5">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md">Edit</button>
-                    <button class="bg-red-400 text-white px-3 py-2 rounded-md">Delete</button>
+                <div class=" flex gap-2 sm:mt-2">
+                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
         </div>
-        <div class="w-4/5 m-auto my-10 border rounded-md border-black">
-            <p class="bg-green-500 text-white text-center w-full rounded-md">P1</p>
+        <div class="w-4/5 m-auto my-10 border rounded-md border-black  sm:h-32 sm:w-11/12">
+            <p class="bg-green-500 text-white text-center w-full rounded-md md:text-xl">P1</p>
             <div class="flex justify-between px-5">
                 <p class="font-bold text-xl">Task 1</p>
                 <p class="text-gray-400 text-sm">13/10/2025 00:00 </p>
             </div>
-            <div class="flex justify-between pl-10 pr-5 pb-3">
-                <p class="text-gray-500 w-1/3">This is just a  dump description fr a dump task
+            <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
+                <p class="text-gray-500 w-1/3 sm:w-72 sm:text-sm md:pt-3">This is just a  dump description fr a dump task
                     This is just a  dump description </p>
-                <div class=" flex gap-5">
-                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md">Edit</button>
-                    <button class="bg-red-400 text-white px-3 py-2 rounded-md">Delete</button>
+                <div class=" flex gap-2 sm:mt-2">
+                    <button class="bg-yellow-400 text-white px-5 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-6">Edit</button>
+                    <button class="bg-red-400 text-white px-3 py-2 rounded-md sm:px-3 sm:py-2 sm:text-sm md:text-xl md:px-4">Delete</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Add Task  -->
     <div id="add-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed hidden">
-        <div class="bg-gray-300 w-2/5 m-auto rounded-md relative mt-10">
+        <div class="bg-gray-300 w-2/5 m-auto rounded-md relative mt-10 sm:w-[27rem] sm:mt-56 md:w-[40rem] md:mt-11">
             <button id="x" class="bg-red-600 text-white w-1/12 text-center rounded absolute top-2 right-3">X</button>
             <p class="font-extrabold italic text-center py-5">Add Task</p>
             <div class="w-4/5 m-auto mb-5">
@@ -99,7 +99,7 @@
             </div>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Description:</p>
-                <textarea class="text-gray-400 w-full h-48 rounded-md resize-none outline-none pl-5 " id="area" value="Entrer la description">Entrer la description</textarea>
+                <textarea class="text-gray-400 w-full h-48 rounded-md resize-none outline-none pl-5 " id="area" placeholder="Entrer la description"></textarea>
             </div>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Date:</p>
@@ -120,13 +120,13 @@
                 </select>
             </div>
             <div class="flex ">
-               <button class="bg-blue-400 text-white px-3 py-1 rounded ml-[28.60rem] mb-5">Add Task</button>
+               <button class="bg-blue-400 text-white px-3 py-1 rounded ml-[28.60rem] mb-5 sm:ml-[18.90rem] md:ml-[30.56rem]">Add Task</button>
             </div>
         </div>
     </div>
     <!-- Update Task -->
-    <div id="add-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed">
-        <div class="bg-gray-300 w-2/5 m-auto rounded-md relative mt-10">
+    <div id="add-model" class="bg-black bg-opacity-50 w-full h-full top-0 left-0 fixed hidden">
+        <div class="bg-gray-300 w-[30rem] m-auto rounded-md relative sm:w-[27rem] sm:mt-56 md:w-[40rem] md:mt-11 ">
             <button id="x" class="bg-red-600 text-white w-1/12 text-center rounded absolute top-2 right-3">X</button>
             <p class="font-extrabold italic text-center py-5">Update Task</p>
             <div class="w-4/5 m-auto mb-5">
@@ -135,7 +135,7 @@
             </div>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Description:</p>
-                <textarea class="text-gray-400 w-full h-48 rounded-md resize-none outline-none pl-5 " id="area" value="Entrer la description">Entrer la description</textarea>
+                <textarea class="text-gray-400 w-full h-48 rounded-md resize-none outline-none pl-5 " id="area" placeholder="Entrer la description"></textarea>
             </div>
             <div class="w-4/5 m-auto mb-5">
                 <p class="font-bold mb-2 italic">Date:</p>
@@ -156,7 +156,7 @@
                 </select>
             </div>
             <div class="flex ">
-               <button class="bg-blue-400 text-white px-3 py-1 rounded ml-[28.60rem] mb-5">Update</button>
+               <button class="bg-blue-400 text-white px-3 py-1 rounded ml-[29.3rem] mb-5 sm:ml-[19.5rem] md:ml-[31.25rem]">Update</button>
             </div>
         </div>
     </div>
