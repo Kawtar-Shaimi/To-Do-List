@@ -20,10 +20,6 @@ function deleteTask(){
     /* Get Tasks From LocalStorage*/
     let taskArray = JSON.parse(localStorage.getItem("taskArray"))
     /* Update Priorities Count */
-    console.log(taskArray)
-    console.log(parseInt(index))
-    console.log(taskArray.find(task => task.index === parseInt(index)))
-    console.log(taskArray.find(task => task.index === parseInt(index)).priority)
     let priority =  taskArray.find(task => task.index === parseInt(index)).priority
     let count
     if (priority == "P1") {

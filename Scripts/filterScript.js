@@ -35,7 +35,10 @@ function filter(){
                     <p class="${taskArray[i].priority == "P1" ? "bg-red-600" : taskArray[i].priority == "P2" ? "bg-orange-400" : "bg-green-500"} text-white text-center w-full rounded-md md:text-xl"><span class="priority">${taskArray[i].priority}</span> : <span class="status">${taskArray[i].status}</span></p>
                     <div class="flex justify-between px-5">
                         <p class="title font-bold text-xl">${taskArray[i].title}</p>
-                        <p class="date text-gray-400 text-sm">${taskArray[i].date}</p>
+                        <p class="date text-gray-400 text-sm flex items-center">
+                            ${taskArray[i].date}
+                            <svg class="ml-4 text-gray-400 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="rgb(156 163 175 / 1)" d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        </p>
                     </div>
                     <div class="flex justify-between pl-10 pr-5 pb-3 sm:pl-5">
                         <p class="description text-gray-500 w-2/3 sm:w-72 sm:text-sm md:pt-3">${taskArray[i].description}</p>
